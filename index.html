@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#What_is_HTML"
+            >What is HTML?</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Html_Anatomy">HTML Anatomy</a></li>
+        <li><a class="nav-link" href="#Heading_paragraphs">Headings and Paragraphs</a></li>
+        <li>
+          <a class="nav-link" href="#Document_web">Document and Website Structure</a>
+        </li>
+        <li><a class="nav-link" href="#Multimedia_html">Multimedia in HTML</a></li>
+        <li><a class="nav-link" href="#Html_tables">HTML Tables</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            HTML is a language made up of elements, wich can be applies to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+
+          <ul>
+            <li>
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+            <li>
+              Some programming experience. If you are new to programming, try
+              one of the tutorials linked on the main page about JavaScript.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_is_HTML">
+        <header>What is HTML?</header>
+        <article>
+          <p>
+            HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          To get started with writing in HTML, open the Scratchpad and write
+          your first "Hello world" HTML code:
+          <code class="code">Hello World!</code>
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!
+        </article>
+      </section>
+      <section class="main-section" id="#Html_Anatomy">
+        <header>HTML Anatomy</header>
+        <p>
+          Let's look closer on the example 
+        </p>
+        <img src="./helloWorld.JPG" height="300px"/>
+        <ul>
+          <li>
+            <span class="bold">The opening tag:</span> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+          </li>
+          <li>
+          <span class="bold">The content:</span> This is the content of the element. In this example, it is the paragraph text.
+          </li>
+          <li>
+            <span class="bold">The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+          </li>
+        </ul>
+        <h3>Anatomy of an HTML Document</h3>
+        <img src="/htmlDoc.JPG" height="400px" width="auto" />
+        <p>
+          From the picture we have:
+        </p>
+        <ol>
+          <li>
+            <span class="boldtag">
+            <span class="tag"><</span>!DOCTYPE html<span class="tag">></span>:</span> The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. More recently, the doctype is a historical artifact that needs to be included for everything else to work right. <span class="boldtag">
+            <span class="tag"><</span>!DOCTYPE html<span class="tag">></span></span>  is the shortest string of characters that counts as a valid doctype. That is all you need to know!
+          </li>
+          <li>
+            <span class="boldtag">
+              <span class="tag"><</span>
+              html
+              <span class="tag">
+                >
+              </span>
+              <span class="tag">
+                <
+              </span>
+              /html
+              <span class="tag">
+                >
+              </span>
+            :</span> The 
+            <span class="boldtag">
+            <span class="tag">
+              <
+            </span>html
+            <span class="tag">
+              >
+            </span>
+            </span> element. This element wraps all the content on the page. It is sometimes known as the root element.
+          </li>
+          <li>
+            <span class="boldtag">
+              <span class="tag"><</span>
+              head
+              <span class="tag">
+                >
+              </span>
+              <span class="tag">
+                <
+              </span>
+              /head
+              <span class="tag">
+                >
+              </span>
+            :</span> The 
+            <span class="boldtag">
+            <span class="tag">
+              <
+            </span>head
+            <span class="tag">
+              >
+            </span>
+          </span> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You will learn more about this in the next article of the series.
+          </li>
+          <li>
+            <span class="boldtag">
+              <span class="tag"><</span>
+              meta charset="utf-8"
+              <span class="tag">></span>
+              :</span> The
+            <span class="boldtag">
+              <span class="tag"><</span>
+              meta
+              <span class="tag">></span>
+            </span>
+            element. This element represents metadata that cannot be represented by other HTML meta-related elements, like 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              base
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              link
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              script
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              style
+              <span class="tag">></span>
+            </span>, or 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              title
+              <span class="tag">></span>
+            </span>
+            . The charset attributes sets the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.
+          </li>
+        </ol>
+      </section>
+      <section class="main-section" id="Heading_paragraphs">
+        <header>Headings and Paragraphs</header>
+        <article>
+          Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.
+          <p>
+            In HTML, each paragraph has to be wrapped in a <span class="boldtag">
+              <span class="tag"><</span>p<span class="tag">></span>
+            </span> element, like so: <code class="code"><span class="tag"><</span>p<span class="tag">></span>I am a pragraph<span class="tag"><</span>/p<span class="tag">></span></code> Each heading has to be wrapped in a heading element:
+            <code class="code"><span class="tag"><</span>h1<span class="tag">></span>I am the title<span class="tag"><</span>/h1<span class="tag">></span></code> There are six heading elements: 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h1
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h2
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h3
+              <span class="tag">></span>
+            </span>, 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h4
+              <span class="tag">></span>
+            </span>
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h5
+              <span class="tag">></span>
+            </span>, and 
+            <span class="boldtag">
+              <span class="tag"><</span>
+              h6
+              <span class="tag">></span>
+            </span>
+            . Each element represents a different level of content in the document; <span class="boldtag">
+              <span class="tag"><</span>
+              h1
+              <span class="tag">></span>
+            </span> represents the main heading, <span class="boldtag">
+              <span class="tag"><</span>
+              h2
+              <span class="tag">></span>
+            </span> represents subheadings, <span class="boldtag">
+              <span class="tag"><</span>
+              h3
+              <span class="tag">></span>
+            </span> represents sub-subheadings, and so on.
+          </p>
+            <h3>Structural Hirearchy</h3>
+            <p>
+              Normaly the hierarchy begin in <span class="boldtag">
+                <span class="tag"><</span>
+                h1
+                <span class="tag">></span>
+              </span> then followed by <span class="boldtag">
+                <span class="tag"><</span>
+                p
+                <span class="tag">></span>
+              </span> for example:
+              <code class="code"><span class="tag"><</span>h1<span class="tag">></span>My First Title<span class="tag"><</span>/h1<span class="tag">></span>
+              <span class="tag"><</span>p<span class="tag">></span>The fisrt paragraph.<span class="tag"><</span>/p<span class="tag">></span>
+              </code>
+            </p>
+        </article>
+      </section>
+      <section class="main-section" id="Document_web">
+        <header>Document and Website Structure</header>
+        <article>
+          <p>
+            Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+          </p>
+          <p>
+            <span class="boldtag">header :</span>
+          </p>
+          <p>
+            Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+          </p>
+          <p>
+            <span class="boldtag">navigation bar :</span>
+          </p>
+          <p>
+            Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.
+          </p>
+          <p>
+            <span class="boldtag">main content :</span>
+          </p>
+          <p>
+            A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc.
+          </p>
+          <p>
+            <span class="boldtag">sidebar :</span>
+          </p>
+          <p>
+            Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.
+          </p>
+          <p>
+            <span class="boldtag">footer :</span>
+          </p>
+          <p>
+            A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself.
+          </p>
+          <p>
+            To implement the structures above, they provides a tag, exapmle:
+          </p>
+          <ul>
+            <li>header: <span class="boldtag">
+              <span class="tag"><</span>
+              header
+              <span class="tag">></span>
+            </span>
+          </li>
+          <li>
+            navigation bar: <span class="boldtag">
+              <span class="tag"><</span>
+              nav
+              <span class="tag">></span>
+            </span>
+          </li>
+          <li>
+            main content: <span class="boldtag">
+              <span class="tag"><</span>
+              main<span class="tag">></span>, with some various content subsection like <span class="tag"><</span>
+              article<span class="tag">></span>, <span class="tag"><</span>section
+              <span class="tag">></span>, <span class="tag"><</span>
+              div<span class="tag">></span>.
+            </span>
+          </li>
+          <li>
+            sidebar: <span class="boldtag">
+              <span class="tag"><</span>
+              aside
+              <span class="tag">></span>
+            </span>
+          </li>
+          <li>
+            footer: <span class="boldtag">
+              <span class="tag"><</span>
+              footer
+              <span class="tag">></span>
+            </span>
+          </li>
+          </ul>
+          <h4>Example</h4>
+          <code class="code"><span class="tag"><</span>!DOCTYPE html<span class="tag">></span>
+            <span class="tag"><</span>html lang="en"<span class="tag">></span>
+            <span class="tag"><</span>head<span class="tag">></span>
+            <span class="tag"><</span>meta charset="UTF-8"<span class="tag">></span>
+            <span class="tag"><</span>title<span class="tag">></span>Title Example<span class="tag"><</span>/title<span class="tag">></span>
+            <span class="tag"><</span>/head<span class="tag">></span>
+            <span class="tag"><</span>body<span class="tag">></span>
+
+            <span class="tag"><</span>header<span class="tag">></span>
+            <span class="tag"><</span>h1<span class="tag">></span>Header Example<span class="tag"><</span>/h1<span class="tag">></span>
+            <span class="tag"><</span>/header<span class="tag">></span>
+
+                <span class="tag"><</span>nav<span class="tag">></span>
+                <span class="tag"><</span>ul<span class="tag">></span>
+                <span class="tag"><</span>li<span class="tag">></span><span class="tag"><</span>a href="#"<span class="tag">></span>Home<span class="tag"><</span>/a<span class="tag">></span><span class="tag"><</span>/li<span class="tag">></span>
+                <span class="tag"><</span>li<span class="tag">></span><span class="tag"><</span>a href="#"<span class="tag">></span>Project<span class="tag"><</span>/a<span class="tag">></span><span class="tag"><</span>/li<span class="tag">></span>
+                <span class="tag"><</span>li<span class="tag">></span><span class="tag"><</span>a href="#"<span class="tag">></span>Contact<span class="tag"><</span>/a<span class="tag">></span><span class="tag"><</span>/li<span class="tag">></span>
+                <span class="tag"><</span>/ul<span class="tag">></span>
+                <span class="tag"><</span>/nav<span class="tag">></span>
+                
+                <span class="tag"><</span>main<span class="tag">></span>
+                <span class="tag"><</span>article<span class="tag">></span>
+                <span class="tag"><</span>h2<span class="tag">></span>Article Example<span class="tag"><</span>/h2<span class="tag">></span>
+                <span class="tag"><</span>p<span class="tag">></span>Paragraphs example.<span class="tag"><</span>/p<span class="tag">></span>
+                <span class="tag"><</span>/article<span class="tag">></span>
+                <span class="tag"><</span>/main<span class="tag">></span>
+
+                <span class="tag"><</span>footer<span class="tag">></span>
+                <span class="tag"><</span>p<span class="tag">></span>©Copyright 2022 by Someone. All rights reversed.<span class="tag"><</span>/p<span class="tag">></span>
+                <span class="tag"><</span>/footer<span class="tag">></span>
+
+            <span class="tag"><</span>/body<span class="tag">></span>
+            <span class="tag"><</span>/html<span class="tag">></span></code>
+        </article>
+      </section>
+      <section class="main-section" id="Multimedia_html">
+        <header>Multimedia in HTML</header>
+        <article>
+          <h4>How do we put an image in HTML?</h4>
+          <p>
+            In order to put a simple image on a web page, we use the <span class="tag"><</span>img<span class="tag">></span> element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt. The src attribute contains a URL pointing to the image you want to embed in the page. As with thehref attribute for <span class="tag"><</span>a<span class="tag">></span> elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.
+          </p>
+          <p>
+            Example you want to put an image of a cat <span class="bold">Cat.jpg</span> in HTML, you could embed the image like so:
+          </p>
+          <code class="code"><span class="tag"><</span>img src="Cat.jpg" alt="Cat"<span class="tag"> /></span></code>
+          <p>
+            Or you could embed the image using URL, example:
+          </p>
+          <code class="code"><span class="tag"><</span>img src="https://www.examplepic.com/images/Cat.jpg" alt="Cat"<span class="tag"> /></span></code>
+          <h4>Video and Audio</h4>
+          <p>Video Element</p>
+          <p>
+            The <span class="tag"><</span>video<span class="tag">></span> element allows you to embed a video very easily. A really simple example looks like this:
+          </p>
+          <code class="code"><span class="tag"><</span>video src="catexample.webm" <span class="tag"> /></span></code>
+        </article>
+      </section>
+      <section class="main-section" id="Html_tables">
+        <header>HTML Tables</header>
+        <article>
+          <p>
+            The content of every table is enclosed by these two tags : <span class="boldtag"><span class="tag"><</span>table<span class="tag">></span><span class="tag"><</span>/table<span class="tag">></span></span>. Add these inside the body of your HTML. Insine the table element we nested <span class="boldtag"><span class="tag"><</span>tr<span class="tag">></span></span> (table row) and <span class="boldtag"><span class="tag"><</span>td<span class="tag">></span></span> for (table data).
+          </p>
+          <p>For example:</p>
+          <code class="code"><span class="tag"><</span>tr<span class="tag">></span>
+            <span class="tag"><</span>td<span class="tag">></span>Your first cell<span class="tag"><</span>/td<span class="tag">></span>
+            <span class="tag"><</span>td<span class="tag">></span>Your second cell<span class="tag"><</span>/td<span class="tag">></span>
+            <span class="tag"><</span>/tr<span class="tag">></span></code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://www.developer.mozilla.org">www.developer.mozilla.org</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
